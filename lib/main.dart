@@ -3,10 +3,18 @@ import 'package:flutter/material.dart';
 void main(){
   runApp(
     MaterialApp(
-      home: Center(
-        child: Text('Hello World'),
+      home: Scaffold(
+        backgroundColor: Colors.blueGrey,
+        appBar: AppBar(
+          title: Text('I Am Rich'),
+          backgroundColor: Colors.blueGrey[900],
+        ),
+        body: Center(
+            child: Image(
+              image: AssetImage('images/diamond.jpg'),
+            ),
+        ),
       ),
     ),
   );
 }
-// hello this just a comment for testing purpose, that it is uploading on github using git or not
